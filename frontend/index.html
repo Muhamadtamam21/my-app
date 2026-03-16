@@ -218,7 +218,9 @@
     const handleSubmit = (e) => {
       e.preventDefault();
       setIsSending(true);
-      setFeedback('');
+      setFeedback('Mengirim...');
+
+      console.log('Mengirim data:', formData);
 
       emailjs.send(
         'service_19impx6',
@@ -229,14 +231,15 @@
           message: formData.message
         }
       )
-      .then(() => {
+      .then((response) => {
+        console.log('SUKSES:', response);
         setFeedback('✅ Pesan berhasil dikirim!');
         setFormData({name: '', email: '', message: ''});
         setIsSending(false);
       })
       .catch((error) => {
-        setFeedback('❌ Gagal mengirim. Coba lagi!');
-        console.error('EmailJS Error:', error);
+        console.error('ERROR DETAIL:', error);
+        setFeedback('❌ Gagal: ' + (error.text || 'Cek console'));
         setIsSending(false);
       });
     };
@@ -305,9 +308,9 @@
       <div style={styles.container}>
         <div style={styles.badge}>
           <i className="fas fa-code" style={{color: '#00ff9d', marginRight: '8px'}}></i>
-          React + EmailJS Widget
+          Portfolio Contact
         </div>
-        <h3 style={styles.title}>✨ Kirim Pesan via React</h3>
+        <h3 style={styles.title}>feedback</h3>
         
         <form onSubmit={handleSubmit} style={styles.form}>
           <input

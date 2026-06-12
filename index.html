@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamad Tamam — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- SCANLINE OVERLAY -->
+  <div class="scanline"></div>
+
+  <!-- NAVBAR HAMBURGER -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- SIDEBAR NAV -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-logo">&lt;MT /&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link active" data-section="home"><i class="fa fa-house"></i> Home</a></li>
+      <li><a href="#" class="nav-link" data-section="about"><i class="fa fa-user"></i> About</a></li>
+      <li><a href="#" class="nav-link" data-section="project"><i class="fa fa-code"></i> Projects</a></li>
+      <li><a href="#" class="nav-link" data-section="skill"><i class="fa fa-bolt"></i> Skills</a></li>
+      <li><a href="#" class="nav-link" data-section="download"><i class="fa fa-download"></i> Downloader</a></li>
+      <li><a href="#" class="nav-link" data-section="contact"><i class="fa fa-envelope"></i> Contact</a></li>
+      <li><a href="#" class="nav-link" data-section="aichat"><i class="fa fa-robot"></i> AI Chat</a></li>
+      <li><a href="#" class="nav-link" data-section="feedback"><i class="fa fa-star"></i> Feedback</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <span class="sidebar-status"><span class="status-dot"></span> Available for hire</span>
+    </div>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- MAIN WRAPPER -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ===== SECTION: HOME ===== -->
+    <section class="section active" id="home">
+      <div class="home-grid">
+        <div class="home-text">
+          <p class="home-eyebrow">Hello, World. I'm</p>
+          <h1 class="home-name">Muhamad Tamam<span class="cursor">_</span></h1>
+          <p class="home-role">Full Stack Developer <span class="role-accent">/ UI Builder</span></p>
+          <p class="home-bio">Crafting digital experiences that live at the intersection of clean code and sharp design. Building the web, one component at a time.</p>
+          <div class="home-cta">
+            <button class="btn-primary" onclick="openSection('project')">
+              <i class="fa fa-code"></i> View Projects
+            </button>
+            <button class="btn-ghost" onclick="openSection('contact')">
+              <i class="fa fa-envelope"></i> Contact Me
+            </button>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Muhamadtamam21" target="_blank" class="social-icon" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/mam48._" target="_blank" class="social-icon" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhamad-tamam-537b823b7" target="_blank" class="social-icon" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://x.com/Muhamadtamam21" target="_blank" class="social-icon" title="Twitter/X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home-visual">
+          <div class="terminal-card">
+            <div class="terminal-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">~/tamam $ whoami</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-key">name</span> <span class="t-eq">:</span> <span class="t-val">"Muhamad Tamam"</span></p>
+              <p><span class="t-key">role</span> <span class="t-eq">:</span> <span class="t-val">"Full Stack Dev"</span></p>
+              <p><span class="t-key">location</span> <span class="t-eq">:</span> <span class="t-val">"Indonesia 🇮🇩"</span></p>
+              <p><span class="t-key">stack</span> <span class="t-eq">:</span> <span class="t-val">["Claude AI","Chat Gpt","DeepSeek"]</span></p>
+              <p><span class="t-key">status</span> <span class="t-eq">:</span> <span class="t-green">"open to work"</span></p>
+              <p class="t-blink">▌</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">// about</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-media-col">
+            <p class="about-intro">I'm a passionate <strong>Full Stack Developer</strong> from Indonesia who loves turning ideas into reality through clean, efficient code and thoughtful UI design.</p>
+            <p class="about-body">With a strong foundation in frontend technologies and growing backend skills, I build web applications that are both functional and visually compelling. I'm constantly learning and pushing boundaries in modern web development.</p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Projects Done</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">6+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">∞</span>
+                <span class="stat-label">Curiosity</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-text-col">
+            <!-- Spotify-style Player -->
+            <div class="spotify-player" id="spotifyPlayer">
+
+              <!-- Video (album art / preview) -->
+              <div class="sp-video-wrap">
+                <video class="sp-video" id="spVideo" preload="metadata" playsinline style="object-fit:contain;">
+                  <source src="assets/video/sample.mp4" type="video/mp4" />
+                </video>
+                <div class="sp-video-overlay"></div>
+              </div>
+
+              <!-- Hidden audio -->
+              <audio class="sp-audio" id="spAudio" preload="metadata">
+                <source src="assets/sound/sample.mp3" type="audio/mpeg" />
+              </audio>
+
+              <!-- Track info -->
+              <div class="sp-info">
+                <div>
+                  <div class="sp-track-name">18 - One Direction</div>
+                  <div class="sp-track-sub">Muhamad Tamam · Portfolio</div>
+                </div>
+                <button class="sp-heart" id="spHeart" onclick="spToggleLike()">
+                  <i class="fa fa-heart"></i>
+                </button>
+              </div>
+
+              <!-- Progress -->
+              <div class="sp-progress-wrap">
+                <input type="range" class="sp-progress-bar" id="spProgress" min="0" max="100" value="0" oninput="spSeek(this.value)">
+                <div class="sp-times">
+                  <span id="spCurrent">0:00</span>
+                  <span id="spDuration">0:00</span>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <div class="sp-controls">
+                <button class="sp-btn-secondary" onclick="spShuffle()" title="Shuffle">
+                  <i class="fa fa-shuffle"></i>
+                </button>
+                <button class="sp-btn-secondary" onclick="spRestart()" title="Previous">
+                  <i class="fa fa-backward-step"></i>
+                </button>
+                <button class="sp-btn-play" id="spPlayBtn" onclick="spTogglePlay()">
+                  <i class="fa fa-play" id="spPlayIcon"></i>
+                </button>
+                <button class="sp-btn-secondary" onclick="spRestart()" title="Next">
+                  <i class="fa fa-forward-step"></i>
+                </button>
+                <button class="sp-btn-secondary" onclick="spToggleMute()" title="Mute" id="spMuteBtn">
+                  <i class="fa fa-volume-high" id="spMuteIcon"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: PROJECT ===== -->
+    <section class="section" id="project">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">// projects</span>
+          <h2 class="section-title">My Projects</h2>
+        </div>
+        <div class="project-grid">
+          <div class="project-card" onclick="openModal('modal1')">
+            <div class="project-card-glow"></div>
+            <div class="project-icon"><i class="fa fa-globe"></i></div>
+            <h3 class="project-name">Web Portfolio</h3>
+            <p class="project-desc">Personal portfolio built with HTML, CSS, and vanilla JS featuring SPA architecture and smooth transitions.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-card" onclick="openModal('modal2')">
+            <div class="project-card-glow"></div>
+            <div class="project-icon"><i class="fa fa-robot"></i></div>
+            <h3 class="project-name">AI Chat App</h3>
+            <p class="project-desc">Real-time AI chatbot application powered by external AI APIs with a modern messenger-like UI.</p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-card" onclick="openModal('modal3')">
+            <div class="project-card-glow"></div>
+            <div class="project-icon"><i class="fa fa-download"></i></div>
+            <h3 class="project-name">Media Downloader</h3>
+            <p class="project-desc">A universal media downloader supporting multiple platforms. Built with Express backend proxy architecture.</p>
+            <div class="project-tags">
+              <span class="tag">Express</span><span class="tag">REST API</span><span class="tag">JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-card" onclick="openModal('modal4')">
+            <div class="project-card-glow"></div>
+            <div class="project-icon"><i class="fa fa-chart-line"></i></div>
+            <h3 class="project-name">Dashboard UI</h3>
+            <p class="project-desc">Admin dashboard template with data visualization components, dark theme, and fully responsive layout.</p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-card" onclick="openModal('modal5')">
+            <div class="project-card-glow"></div>
+            <div class="project-icon"><i class="fa fa-store"></i></div>
+            <h3 class="project-name">E-Commerce Page</h3>
+            <p class="project-desc">Storefront landing page with product listing, cart preview, and mobile-first responsive design.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">Bootstrap</span><span class="tag">JS</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project-card" onclick="openModal('modal6')">
+            <div class="project-card-glow"></div>
+            <div class="project-icon"><i class="fa fa-note-sticky"></i></div>
+            <h3 class="project-name">Notes App</h3>
+            <p class="project-desc">Minimal note-taking app with local storage persistence, tagging, and real-time markdown preview.</p>
+            <div class="project-tags">
+              <span class="tag">React</span><span class="tag">LocalStorage</span><span class="tag">MD</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fa fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: SKILL ===== -->
+    <section class="section" id="skill">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">// skills</span>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
+        <div class="skill-layout">
+          <div class="skill-badges">
+            <div class="skill-badge" data-skill="HTML">
+              <i class="fab fa-html5"></i>
+              <span>HTML</span>
+              <div class="badge-glow"></div>
+            </div>
+            <div class="skill-badge" data-skill="CSS">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+              <div class="badge-glow"></div>
+            </div>
+            <div class="skill-badge" data-skill="JavaScript">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+              <div class="badge-glow"></div>
+            </div>
+            <div class="skill-badge" data-skill="React JS">
+              <i class="fab fa-react"></i>
+              <span>React JS</span>
+              <div class="badge-glow"></div>
+            </div>
+            <div class="skill-badge" data-skill="Bootstrap">
+              <i class="fab fa-bootstrap"></i>
+              <span>Bootstrap</span>
+              <div class="badge-glow"></div>
+            </div>
+            <div class="skill-badge" data-skill="TypeScript">
+              <i class="fa fa-t"></i>
+              <span>TypeScript</span>
+              <div class="badge-glow"></div>
+            </div>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>HTML5</span><span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>CSS3</span><span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>JavaScript</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>React JS</span><span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>Bootstrap</span><span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span>TypeScript</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: DOWNLOAD ===== -->
+    <section class="section" id="download">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">// tools</span>
+          <h2 class="section-title">Media Downloader</h2>
+          <p class="section-subtitle">Paste a URL from YouTube, TikTok, Instagram, and more</p>
+        </div>
+        <div class="downloader-card">
+          <div class="downloader-icon"><i class="fa fa-download"></i></div>
+          <div class="downloader-input-group">
+            <input type="text" id="downloadUrl" class="dl-input" placeholder="https://www.youtube.com/watch?v=..." />
+            <button class="btn-primary" id="dlBtn" onclick="handleDownload()">
+              <i class="fa fa-magnifying-glass"></i> Fetch
+            </button>
+          </div>
+          <div id="dlLoading" class="dl-loading hidden">
+            <div class="spinner"></div><span>Fetching media info...</span>
+          </div>
+          <div id="dlResult" class="dl-result hidden"></div>
+          <div id="dlError" class="dl-error hidden"></div>
+        </div>
+        <div class="supported-platforms">
+          <span class="platform-tag"><i class="fab fa-youtube"></i> YouTube</span>
+          <span class="platform-tag"><i class="fab fa-tiktok"></i> TikTok</span>
+          <span class="platform-tag"><i class="fab fa-instagram"></i> Instagram</span>
+          <span class="platform-tag"><i class="fab fa-facebook"></i> Facebook</span>
+          <span class="platform-tag"><i class="fab fa-twitter"></i> Twitter/X</span>
+          <span class="platform-tag"><i class="fab fa-spotify"></i> Spotify</span>
+          <span class="platform-tag"><i class="fab fa-snapchat"></i> Snapchat</span>
+          <span class="platform-tag"><i class="fab fa-pinterest"></i> Pinterest</span>
+          <span class="platform-tag"><i class="fa fa-music"></i> SoundCloud</span>
+          <span class="platform-tag"><i class="fa fa-scissors"></i> CapCut</span>
+          <span class="platform-tag"><i class="fa fa-cloud"></i> TeraBox</span>
+          <span class="platform-tag"><i class="fa fa-circle-dot"></i> Threads & More</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">// contact</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Have a project or just want to say hi? Drop me a message.</p>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <i class="fab fa-github"></i>
+              <div>
+                <span class="ci-label">GitHub</span>
+                <a href="https://github.com/Muhamadtamam21" target="_blank" class="ci-val">Muhamadtamam21</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fab fa-instagram"></i>
+              <div>
+                <span class="ci-label">Instagram</span>
+                <a href="https://instagram.com/mam48._" target="_blank" class="ci-val">@mam48._</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fab fa-linkedin-in"></i>
+              <div>
+                <span class="ci-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/muhamad-tamam-537b823b7" target="_blank" class="ci-val">Muhamad Tamam</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fab fa-x-twitter"></i>
+              <div>
+                <span class="ci-label">Twitter / X</span>
+                <a href="https://x.com/Muhamadtamam21" target="_blank" class="ci-val">@Muhamadtamam21</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form-wrap">
+            <div class="contact-form-card">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea id="contactMsg" class="form-input form-textarea" placeholder="Tell me about your project..."></textarea>
+              </div>
+              <button class="btn-primary full-width" onclick="submitContact()">
+                <i class="fa fa-paper-plane"></i> Send Message
+              </button>
+              <div id="contactSuccess" class="form-success hidden">
+                <i class="fa fa-circle-check"></i> Message sent! I'll get back to you soon.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: AI CHAT ===== -->
+    <section class="section" id="aichat">
+      <div class="section-inner chat-section-inner">
+        <div class="section-header">
+          <span class="section-tag">// ai</span>
+          <h2 class="section-title">AI Chat</h2>
+          <p class="section-subtitle">Powered by GPT-5 — ask me anything</p>
+        </div>
+        <div class="chat-container">
+          <div class="chat-messages" id="chatMessages">
+            <div class="chat-bubble ai">
+              <div class="bubble-avatar"><i class="fa fa-robot"></i></div>
+              <div class="bubble-content">
+                <p>Halo! Saya adalah AI assistant. Ada yang bisa saya bantu? 🤖</p>
+                <span class="bubble-time">Just now</span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-input-bar">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Type your message..." onkeydown="if(event.key==='Enter') sendChat()" />
+            <button class="chat-send-btn" onclick="sendChat()">
+              <i class="fa fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION: FEEDBACK ===== -->
+    <section class="section" id="feedback">
+      <div class="section-inner">
+        <div class="section-header">
+          <span class="section-tag">// reviews</span>
+          <h2 class="section-title">Feedback</h2>
+          <p class="section-subtitle">What do visitors say? Leave your review below.</p>
+        </div>
+        <div class="feedback-layout">
+          <div class="feedback-form-card">
+            <h3 class="fb-form-title">Leave a Review</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" id="fbName" class="form-input" placeholder="John Doe" />
+            </div>
+            <div class="form-group">
+              <label>Rating</label>
+              <div class="star-rating" id="starRating">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+              </div>
+              <input type="hidden" id="fbRating" value="0" />
+            </div>
+            <div class="form-group">
+              <label>Comment</label>
+              <textarea id="fbComment" class="form-input form-textarea" placeholder="Share your thoughts..."></textarea>
+            </div>
+            <button class="btn-primary full-width" onclick="submitFeedback()">
+              <i class="fa fa-star"></i> Submit Review
+            </button>
+            <div id="fbSuccess" class="form-success hidden">
+              <i class="fa fa-circle-check"></i> Thank you for your feedback!
+            </div>
+          </div>
+          <div class="feedback-reviews" id="feedbackReviews">
+            <div class="fb-loading"><div class="spinner"></div> Loading reviews...</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()"><i class="fa fa-times"></i></button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
